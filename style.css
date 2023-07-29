@@ -13,7 +13,7 @@
 
     --black: black;
     --white: white;
-    --primary: rgba(120, 61, 28, 0.847);
+    --primary: lightblue;
     --lightgrey: lightgrey;
     --gray: gray;
 }
@@ -144,7 +144,7 @@ html {
 }
 
 #about .about-description a:hover {
-    color: white;
+    color: lightblue;
 }
 
 #about .about-description .icons {
@@ -251,6 +251,9 @@ html {
 .img-fluid {
     width: 100%;
     /* Hình ảnh chiếm toàn bộ chiều rộng của cột */
-    height: auto;
-    /* Chiều cao tự động điều chỉnh để giữ nguyên tỷ lệ khung hình */
+    height: 100%;
+    object-fit: cover;
+    /* Hiển thị hình ảnh đủ kích thước nhưng không bị méo */
+    object-position: center center;
+    /* Căn giữa hình ảnh trong khung */
 }
