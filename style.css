@@ -6,14 +6,14 @@
     box-sizing: 0;
 }
 
-
 :root {
     --border: 2px solid grey;
     --boxshadow: 0 5px 20px grey;
 
     --black: black;
     --white: white;
-    --primary: rgba(120, 61, 28, 0.847);
+    /* --primary: rgba(120, 61, 28, 0.847); */
+    --primary: lightblue;
     --lightgrey: lightgrey;
     --gray: gray;
 }
@@ -144,7 +144,7 @@ html {
 }
 
 #about .about-description a:hover {
-    color: white;
+    color: lightblue;
 }
 
 #about .about-description .icons {
@@ -251,6 +251,88 @@ html {
 .img-fluid {
     width: 100%;
     /* Hình ảnh chiếm toàn bộ chiều rộng của cột */
-    height: auto;
+    height: 100%;
     /* Chiều cao tự động điều chỉnh để giữ nguyên tỷ lệ khung hình */
+    object-fit: cover;
+    /* Hiển thị hình ảnh đủ kích thước nhưng không bị méo */
+    object-position: center center;
+    /* Căn giữa hình ảnh trong khung */
 }
+
+/* Rose page css */
+.span1 {
+    font-size: 3.2rem;
+    text-align: justify;
+    color: red;
+    margin: auto;
+
+}
+#header1 {
+    min-height: 80vh;
+    background: url("./image/6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#header1 .navbar-brand,
+#header1 .navbar-nav .nav-link,
+#header1 .icons div {
+    display: block;
+    font-size: 2.4rem;
+    margin: 0 1rem;
+    color: purple;
+}
+
+#header1 .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+#home1 .content h1 {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    color: purple;
+    font-weight: 400;
+}
+
+#home1 .content h3 {
+    font-size: 5.5rem;
+    margin: 2rem 0;
+    color: purple;
+}
+
+#home1 .content a {
+    display: block;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: purple;
+    border: 2px solid purple;
+    background-color: transparent;
+    margin: 1.5rem 0;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#menu .btn1 {
+    display: block;
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: purple(120, 61, 28, 0.847);
+    /* border: 2px solid rgba(120, 61, 28, 0.847); */
+    border: 2px solid purple;
+    border-radius: 4px;
+    background-color: transparent;
+    margin: auto;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* Tulip page css */
